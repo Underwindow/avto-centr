@@ -1,0 +1,28 @@
+.separator {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  border-top: 1px solid;
+  padding-top: 10px;
+
+  span {
+    color: var(--label-secondary);
+  }
+}
+
+.separator-secondary {
+  border-color: var(--sep-secondary);
+  div {
+    color: var(--label-tertiary);
+  }
+}
+
+.separator-primary {
+  border-color: var(--sep-primary);
+  div {
+    color: var(--label-primary);
+  }
+}

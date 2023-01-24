@@ -1,0 +1,11 @@
+.info {
+  width: 420px;
+
+  &__title {
+    color: var(--label-secondary);
+  }
+
+  &__text {
+    color: var(--label-tertiary);
+  }
+}

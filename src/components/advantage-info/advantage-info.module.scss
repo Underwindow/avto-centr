@@ -1,0 +1,23 @@
+.advantage-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  header, div {
+    width: 650px;
+  }
+
+  header {
+    font-size: 90px;
+    line-height: .9;
+    letter-spacing: -0.04em;
+    color: var(--hint);
+  }
+
+  div {
+    font-size: 28px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--label-primary);
+  }
+}

@@ -1,0 +1,91 @@
+#root {
+  height: auto;
+  width: 100%;
+}
+
+:root {
+  /*---Brand Color---*/
+  //Hint Color
+  --hint: #FEC110;
+
+  /*---System Color---*/
+  //System colors
+  --error: #D9534F;
+  --warning: #FFCC00;
+  --success: #34C759;
+
+  //Typography
+  --label-primary: #2C2C2C;
+  --label-secondary: #989898;
+  --label-tertiary: #FFFFFF;
+
+  //Background
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F4F4F4;
+  --bg-tertiary: #E4E4E4;
+  --bg-quaternary: #313232;
+
+  //Separators
+  --sep-primary: #B6B6B6;
+  --sep-secondary: #EEECEC;
+
+
+  font-family: ANova, ANovaLight, ANovaBold, ANovaCond, ANovaCondBold, ANovaCondLight, arial;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: black;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  min-width: 375px;
+  max-width: 1600px;
+  background-color: var(--bg-secondary);
+}
+
+h1 {
+  margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--grey);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.scrollable-y {
+  overflow-y: auto;
+  position: absolute;
+  scroll-behavior: smooth;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

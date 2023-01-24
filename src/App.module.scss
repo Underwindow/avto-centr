@@ -1,0 +1,114 @@
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.page {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 180px;
+
+  .intro {
+    height: 650px;
+    display: flex;
+
+    &__info-container,
+    &__carousel-container {
+      height: 100%;
+    }
+
+    &__info-container {
+      width: 820px;
+      padding: 80px 40px 60px 130px;
+      background-color: var(--bg-quaternary);
+      box-sizing: border-box;
+    }
+
+    &__carousel-container {
+      width: 780px;
+      padding: 0 130px 60px 40px;
+      box-sizing: border-box;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+
+
+
+  .services {
+    h1 {
+      color: var(--label-primary);
+    }
+
+    &__cards-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+  }
+
+  .maintenance {
+    gap: 40px;
+
+    &__paragraph,
+    &__facts {
+      display: flex;
+      flex-direction: column;
+      flex: 50%;
+    }
+
+    &__paragraph {
+      gap: 40px;
+
+      h1,
+      p {
+        color: var(--label-primary);
+      }
+
+      div {
+        width: 420px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        p {
+          margin: 0;
+        }
+      }
+    }
+
+    &__facts {
+      gap: 60px;
+    }
+
+    &__facts-row {
+      display: flex;
+      gap: 80px;
+    }
+  }
+
+  .advantage,
+  .services {
+    gap: 60px;
+    flex-direction: column;
+  }
+
+  .advantage,
+  .services,
+  .maintenance {
+    display: flex;
+    padding: 0 130px;
+  }
+}
